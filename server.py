@@ -24,7 +24,7 @@ def home():
 @app.route('/blog/<index>')
 def blog_post(index):
     array_index = int(index) - 1
-    return render_template("post.html", blog=JSON[array_index], index=index)
+    return render_template("post.html", blog=JSON[array_index])
 
 
 if __name__ == "__main__":
